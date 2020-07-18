@@ -4,30 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Портфолио</title>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
         <!-- шапка сайта -->
          <header>
             <nav>
-              <a href="WebStudio">WebStudio</a>       
-               <!-- <img src="./images/WebStudio.png" alt="logotype company" /> -->               
-              <ul>
-                <li><a href="index.html">Студия</a></li>
-                <li><a href="">Портфолио</a></li>
-                <li><a href="#">Контакты</a></li>
+                <a class="logotype" href="Web Studio">
+                    <span class="logo">Web</span> 
+                    <span class="log">Studio</span>
+                </a>       
+                             
+              <ul class="nav-links list">
+                <li><a href="./index.html" class="link" >Студия</a></li>
+                <li><a href="#" class="link">Портфолио</a></li>
+                <li><a href="#" class="link">Контакты</a></li>
               </ul>
             </nav>
-              <address>
-                <img src="./images/envelope.svg" alt="">
-                <a href="mailto:info@devstudio.com">info@devstudio</a>
+              <address class="adr">
+                <img src="./images/envelope.svg" alt="letter">
+                <a href="mailto:info@devstudio.com" class="adr-mail">info@devstudio</a>
                 
-                <a href="tel:+380961111111">+38 096 111 11 11</a>
+                <a href="tel:+380961111111" class="adr-tel">+38 096 111 11 11</a>
               </address>      
          </header>
               <!-- уникальный контент страницы --> 
         <main>
             <section>
-                <ul>
+                <!--кнопки-->
+                <ul class="list-buttons list">
                     <li>
                         <a href="#">Все</a>                    
                     </li>
@@ -45,50 +52,69 @@
                     </li>
                 </ul>
             </section>
+            <!-- проэкты-->
             <section>
-                <ul> 
+                <ul class="list-of-projects list"> 
                     <li>
-                    <img src="./images/trio.jpg" width="370" alt="">
+                        <a href="">
+                            <img src="./images/trio.jpg" width="370" alt="">
+                        </a>
                         <h3>Технокряк</h3>
                         <p>Веб-сайт</p>
                     </li>
                     <li>
-                    <img src="./images/bascetball.jpg" width="370" alt="">
+                        <a href="">
+                            <img src="./images/bascetball.jpg" width="370" alt="">
+                        </a>   
                         <h3>Постер New Orlean vs Golden Star</h3>
                         <p>Дизайн</p>
                     </li>
                     <li>
-                    <img src="./images/seafood.jpg" width="370" alt="">
+                        <a href="">
+                            <img src="./images/seafood.jpg" width="370" alt="">
+                        </a>
                         <h3>Ресторан Seafood</h3>
                         <p>Приложение</p>
                     </li>
                     <li>
-                    <img src="./images/headphone.jpg" width="370" alt="">
+                        <a href="">
+                            <img src="./images/headphone.jpg" width="370" alt="">
+                        </a>
                         <h3>Проект Prime</h3>
                         <p>Маркетинг</p>
                     </li>
                     <li>
-                    <img src="./images/boxes.jpg" width="370" alt="">
+                        <a href="">
+                            <img src="./images/boxes.jpg" width="370" alt="">
+                        </a>
                         <h3>Проект Boxes</h3>
                         <p>Приложение</p>
                     </li>
                     <li>
-                    <img src="./images/monitor.jpg" width="370" alt="">
+                        <a href="">
+                            <img src="./images/monitor.jpg" width="370" alt="">
+                        </a>
                         <h3>Inspiration has no Borders</h3>
                         <p>Веб-сайт</p>
                     </li>
                     <li>
-                    <img src="./images/book.jpg" width="370" alt="">
+                        <a href="">
+                            <img src="./images/book.jpg" width="370" alt="">
+                        </a>
                         <h3>Издание Limited Edition</h3>
                         <p>Дизайн</p>
                     </li>
                     <li>
-                    <img src="./images/label.jpg" width="370" alt="">
+                        <a href="">
+                            <img src="./images/label.jpg" width="370" alt="">
+                        </a>
                         <h3>Проект LAB</h3>
                         <p>Маркетинг</p>
                     </li>
                     <li>
-                    <img src="./images/noutbook.jpg" width="370" alt="">
+                        <a href="">
+                            <img src="./images/noutbook.jpg" width="370" alt="">
+                        </a>
                         <h3>Growing Business</h3>
                         <p>Приложение</p>
                     </li>
@@ -98,14 +124,17 @@
         </main>
             <!-- футер -->
     <footer>
-        <a href="WebStudio">WebStudio</a> 
-        <address>
+        <a class="logotype" href="Web Studio">
+            <span class="logo">Web</span> 
+            <span class="log">Studio</span>
+          </a> 
+        <address class="adr">
          <p>г.Киев, пр-т Леси Украинки, 26 </p><br>
-         <a href="mailto:info@example.com">info@example.com</a><br>
-         <a href="tel:+380961111111">+38 096 111 11 11</a>
+         <a href="mailto:info@example.com" class="adr-mail">info@example.com</a><br>
+         <a href="tel:+380961111111" class="adr-tel">+38 096 111 11 11</a>
         </address>
-        <p>присоединяйтесь</p>
-         <ul>
+        <p class="follow">присоединяйтесь</p>
+         <ul class="social-links list">
            <li>
              <a href="https://www.instagram.com/" target="_blank" rel="noreferrer noopener">
             <img src="./images/instagram2.svg" alt="instagram"></a>         
