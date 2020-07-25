@@ -6,6 +6,15 @@
 /*     font-family: 'Raleway', sans-serif;
 
     font-family: 'Roboto', sans-serif; */
+html {
+    box-sizing: border-box;
+} 
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
 :root {
     --accent-color: #2196F3;
     --dark-color: #212121;
@@ -75,6 +84,8 @@ p {
 /*для сброса точек перед списками*/
 .list {
     list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
 .nav-links {
@@ -102,9 +113,8 @@ p {
     letter-spacing: 0.02em;   
     color: var(--main-color);        
 }
-
-.adr .adr-mail:hover,
-.adr .adr-mail:focus {
+.adr-mail:hover,
+.adr-mail:focus {
     color:var(--accent-color);
 }
 
@@ -190,3 +200,70 @@ p {
     /*color: #FFFFFF;*/
 }
 
+.container {
+    display: flex;
+    width: 1170px;
+    height: 80px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+}
+
+.container-nav {
+    display: flex;
+
+}
+
+.container .nav-links{
+    display: flex;
+    align-items: center;
+
+}
+.nav-links .menu {
+    margin-right: 50px;
+    align-items: center;
+}
+.logotype {
+    display: flex;
+}
+.log {
+    margin-right: 85px;
+    margin-left: 5px;
+}
+
+.adr {
+    display: flex;
+}
+.adr-mail {
+    display: flex;
+}
+.let {
+    margin-right: 10px;
+    margin-left: 255px;
+}
+.adr-tel {
+    display: flex;
+}
+.smart{
+    margin-left: 30PX;
+    margin-right: 10PX;
+} 
+
+.content {
+
+}
+
+.main-content {
+
+}
+
+.order-button {
+    display: inline-block;
+    padding: 0;
+    background-color: var(--accent-color);
+    text-decoration: none;
+    
+}
+    

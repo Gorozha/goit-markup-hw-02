@@ -11,33 +11,40 @@
   </head>
   <body>
     <!-- шапка сайта -->
-    <header>
-      <nav>
+    
+     <header>
+      <div class="container">
+       <nav class="container-nav">
         <a class="logotype" href="Web Studio">
           <span class="logo">Web</span> 
-          <span class="log">Studio</span>
+          <span class="log"> Studio</span>
         </a>       
-                       
+                      
         <ul class="nav-links list">
-          <li><a href="#"class ="link">Студия</a></li>
-          <li><a href="./portfolio.html" class="link" >Портфолио</a></li>
-          <li><a href="#" class="link" >Контакты</a></li>
+          <li class="menu"><a href="#"class ="link">Студия</a></li>
+          <li class="menu"><a href="./portfolio.html" class="link" >Портфолио</a></li>
+          <li class="menu"><a href="#" class="link" >Контакты</a></li>
         </ul>
-      </nav>
-        <address class="adr">
-          <img src="./images/envelope.svg" alt="letter">
-          <a href="mailto:info@devstudio.com" class="adr-mail">info@devstudio</a>          
-          <a href="tel:+380961111111" class="adr-tel">+38 096 111 11 11</a>
-        </address>      
-    </header>
+       </nav>
+        <address class="adr">          
+          <a href="mailto:info@devstudio.com" class="adr-mail">
+            <img class="let" src="./images/envelope.svg" alt="letter"> info@devstudio  
+          </a>          
+          <a href="tel:+380961111111" class="adr-tel">
+            <img class="smart" src="./images/smartphone.svg" alt="smartphone"> +38 096 111 11 11
+          </a>
+        </address>
+      </div>      
+     </header>
+    
     <!-- уникальный контент страницы --> 
     <main> 
-      <section>
+      <section class="content">
         <h1 class="main-content">эффективные решения для вашего бизнеза</h1>
         <button class="order-button">заказать услугу</button>       
       </section>    
-    <!-- особенности-->
-    <section>
+     <!-- особенности-->
+     <section>
       <h2>особенности</h2>
       <ul class="title-features list">
         <li>
@@ -73,9 +80,9 @@
           </p>
         </li>
       </ul>
-    </section>
-    <!-- чем мы занимаемся -->
-    <section>
+     </section>
+     <!-- чем мы занимаемся -->
+     <section>
       <h2>Чем мы занимаемся</h2>
       <ul class="title-works list">
         <li>
@@ -97,9 +104,9 @@
           </figure>
         </li>
       </ul>
-    </section>
-    <!-- наша команда -->
-    <section>
+     </section>
+     <!-- наша команда -->
+     <section>
       <h2>наша команда</h2>
       <ul class="our-team list">
          <li>
@@ -211,9 +218,9 @@
       </ul> 
          </li>
       </ul>
-    </section>
-    <!-- постоянные клиенты -->
-    <section>
+     </section>
+     <!-- постоянные клиенты -->
+     <section>
       <h2>Постоянные клиенты</h2>
        <ul class="costumer-list list">
          <li>
@@ -247,8 +254,8 @@
            </a>
          </li>
       </ul>
-    </section>
-  </main> 
+     </section>
+    </main> 
     <!-- футер -->
     <footer>
       <a class="logotype" href="Web Studio">
